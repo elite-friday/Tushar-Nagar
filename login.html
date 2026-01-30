@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login in- AI Arena</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <div class="image-section">
+            <img src="https://via.placeholder.com/300x400?text=Character+Illustration" alt="Character Image">
+        </div>
+
+        <div class="form-section">
+            <h2>LOG In</h2>
+            <p class="subtitle">Unlock your world.</p>
+            
+            <form id="loginForm" action="/login" method="post">
+                <div class="input-group">
+                    <label>Email <span>*</span></label>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password <span>*</span></label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="Enter your password" required name="password">
+                        <span class="toggle-password" onclick="togglePass()">👁️</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary" formaction="/login_email">Login in</button>
+                <button type="submit" class="btn-secondary" formaction="/create_account_page">Create an account</button>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='login.js') }}"></script>
+</body>
+</html>

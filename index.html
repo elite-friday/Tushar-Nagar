@@ -1,0 +1,127 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamifyLMS | Learn, Play, Conquer</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <span>🎮</span> GamifyLMS
+        </div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#gamification">Rewards</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <a href="#" class="btn-cta">Get Started</a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Level Up Your <span>Learning Journey</span></h1>
+            <p>The first LMS that turns education into an epic adventure. Earn XP, collect badges, and climb the
+                leaderboard while mastering new skills.</p>
+            <div class="hero-btns">
+                <a href="#" class="btn-cta">Start Free Trial</a>
+                <a href="#features"
+                    style="margin-left: 1rem; color: var(--text-main); text-decoration: none; font-weight: 600;">Explore
+                    Features →</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80"
+                alt="Gamification Dashboard">
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="section-title">
+            <h2>Why Choose GamifyLMS?</h2>
+            <p>We combine cognitive science with game mechanics to boost engagement by 400%.</p>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <span class="feature-icon">🏆</span>
+                <h3>Leaderboards</h3>
+                <p>Compete with peers in real-time. Rise through the ranks and become a Top Learner.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">💎</span>
+                <h3>XP & Rewards</h3>
+                <p>Earn experience points for every lesson completed. Unlock exclusive badges and rewards.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🗺️</span>
+                <h3>Skill Paths</h3>
+                <p>Follow visual quest maps that guide you through complex subjects step-by-step.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🤝</span>
+                <h3>Guilds</h3>
+                <p>Join study groups, collaborate on projects, and win team challenges together.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gamification" class="gamification">
+        <h2>Engage Like Never Before</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>95%</h3>
+                <p>Completion Rate</p>
+            </div>
+            <div class="stat-item">
+                <h3>4.8/5</h3>
+                <p>User Rating</p>
+            </div>
+            <div class="stat-item">
+                <h3>1M+</h3>
+                <p>Badges Earned</p>
+            </div>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Active Community</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo"><span>🎮</span> GamifyLMS</div>
+                <p>Making learning addictive since 2024.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">API Docs</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GamifyLMS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
